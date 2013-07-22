@@ -1,0 +1,106 @@
+diff --git a/dereference_list.info b/dereference_list.info
+index 3130d7e..df8abe0 100644
+--- a/dereference_list.info
++++ b/dereference_list.info
+@@ -3,3 +3,10 @@ description = Provides list values from another list field in a referenced entit
+ package = Fields
+ core = 7.x
+ dependencies[] = list (>=7.14)
++
++; Information added by drupal.org packaging script on 2012-07-15
++version = "7.x-1.x-dev"
++core = "7.x"
++project = "dereference_list"
++datestamp = "1342311635"
++
+diff --git a/dereference_list.module b/dereference_list.module
+index afa7f61..826a18f 100644
+--- a/dereference_list.module
++++ b/dereference_list.module
+@@ -4,18 +4,83 @@ function dereference_list_allowed_list_values($field, $instance, $entity_type, $
+   $return = array();
+   if ($entity) {
+     $settings = $field['settings'];
+-    $reference_field = field_info_field($settings['entityreference_field']);
++//    dprint_r($entity);
++    $reference_field = field_info_field($settings['entityreference_field']); //field_evidence_claim
+     $reference_items = field_get_items($entity_type, $entity, $reference_field['field_name']);
++//    $reference_items = field_get_items('taxonomy_term', $entity, $reference_field['field_name']);
++//    dprint_r($reference_field);
+     $referenced_entity_type = $reference_field['settings']['target_type'];
+     $referenced_entity_id = $reference_items[0]['target_id'];
+     if ($referenced_entity_id) {
+       $referenced_entities = entity_load($referenced_entity_type, array($referenced_entity_id));
+       $referenced_entity = $referenced_entities[$referenced_entity_id];
+       $dereference_field_items = field_get_items($referenced_entity_type, $referenced_entity, $settings['dereferenced_field']);
+-      foreach ($dereference_field_items as $item) {
+-        $return[$item['value']] = $item['value'];
++      $criteria_claim = taxonomy_term_load($dereference_field_items[0]['tid']);
++      $field_claim_variable = $criteria_claim->field_claim_variable;
++      if (isset($field_claim_variable['und'])) {
++        $variable_parent = taxonomy_term_load($field_claim_variable['und'][0]['tid']);
++	$title = $variable_parent->name;
++        $variable_children =  taxonomy_get_children($variable_parent->tid);	
++//        dprint_r($variable_children);
++        $idx = 0;
++        foreach ($variable_children as $item) {
++//          dprint_r($item);
++          $return[$idx] = $item->name;
++	  $idx = $idx + 1;
++          $hidden = false;
++        }
++      } else {
++	  $title = "";
++          $hidden = true;
+       }
+     }
++
++    $field_name = $reference_field['field_name'];
++    $array = array(
++      'field' => $field['field_name'],
++      'entityreference_field' => $settings['entityreference_field'],
++      'dereference_field' => $settings['dereferenced_field'],
++    );
++
++    // Setting drupal_static variable so it can be used later.
++    $dereference_field_list = &drupal_static(__FUNCTION__, array());
++    $dereference_field_list[$field_name] = $array;
++    $dereference_field_list['title'] = $title;
++    $dereference_field_list['hidden'] = $hidden;
+   }
+   return $return;
+ }
++
++function dereference_list_form_alter(&$form, &$form_state, $form_id) {
++  if (isset($form['#node_edit_form'])) {
++    // Pulling drupal_static variable from dereference_list_allowed_list_values().
++    $dereference_field_list = &drupal_static('dereference_list_allowed_list_values', array());
++//dprint_r($dereference_field_list);
++    foreach ($dereference_field_list as $field => $data) {
++//dprint_r($field);
++//dprint_r($data['field']);
++      if (isset($form[$field])) {
++        $form[$field]['und']['#ajax'] = array(
++          'callback' => 'dereference_field_ajax_callback_return',
++          'wrapper' => 'dereference_field_wrapper_' . $field,          
++        );
++        $wrapped_field = $data['field'];
++        $form[$wrapped_field]['#prefix'] = '<div id="dereference_field_wrapper_' . $field . '">';
++        $form[$wrapped_field]['#suffix'] = '</div>';
++        $form[$data['field']]['#type'] = $dereference_field_list['hidden'] ? 'hidden' : 'container';
++        $form[$data['field']]['und']['#title'] = $dereference_field_list['title'];
++//	dprint_r($form[$data['field']]);
++	break;
++      }
++    }
++  }
++}
++
++function dereference_field_ajax_callback_return($form, $form_state) {
++  $calling_field = str_replace('dereference_field_wrapper_', '', $form_state['triggering_element']['#ajax']['wrapper']);
++  // Pulling drupal_static variable from dereference_list_allowed_list_values().
++  $dereference_field_list = &drupal_static('dereference_list_allowed_list_values');
++  $replaced_field = $dereference_field_list[$calling_field]['field'];
++
++  return $form[$replaced_field];
++}
