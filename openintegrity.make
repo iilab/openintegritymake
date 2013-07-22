@@ -14,3 +14,10 @@ projects[openintegrity][download][type] = "git"
 projects[openintegrity][download][url] = "https://github.com/iilab/openintegrity.git"
 projects[openintegrity][type] = "module"
 projects[openintegrity][version] = "1.0-dev"
+
+; Open Integrity Theme
+projects[openintegrity][download][type] = "git"
+projects[openintegrity][download][url] = "https://github.com/iilab/openintegritytheme.git"
+projects[openintegrity][type] = "theme"
+projects[openintegrity][directory_name] = "bootstrap"
+projects[openintegrity][version] = "1.0-dev"

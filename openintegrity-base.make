@@ -17,8 +17,6 @@ projects[better_formats][version] = "1.0-beta1"
 
 projects[block_class][version] = "2.0"
 
-projects[bootstrap][version] = "2.1"
-
 projects[botcha][version] = "3.2"
 
 projects[bundle_inherit][version] = "1.0-alpha2"
@@ -39,6 +37,8 @@ projects[date][version] = "2.6"
 
 projects[deploy][version] = "2.0-alpha1"
 
+projects[diff][version] = "3.2"
+
 ; projects[ds][version] = "2.4"
 
 projects[email_registration][version] = "1.1"
@@ -49,7 +49,6 @@ projects[entity][patch][] = "http://drupal.org/files/entity-entity_node_access-1
 projects[entitycache][version] = "1.1"
 
 projects[entity_dependency][version] = "1.0-alpha1"
-
 
 projects[entity_view_mode][version] = "1.0-rc1"
 
@@ -72,6 +71,8 @@ projects[formblock][version] = "1.x-dev"
 
 projects[fpa][version] = "2.3"
 
+projects[get_form_id][version] = "1.0"
+
 projects[inline_entity_form][version] = "1.2"
 
 projects[jquery_update][version] = "2.3"
@@ -83,6 +84,8 @@ projects[libraries][version] = "2.1"
 projects[link][version] = "1.1"
 
 projects[logintoboggan][version] = "1.3"
+
+projects[masquerade][version] = "1.0-rc5"
 
 projects[moopapi][version] = "1.2"
 
@@ -110,6 +113,10 @@ projects[submitted_by][version] = "1.x-dev"
 
 projects[strongarm][version] = "2.0"
 
+projects[taxonomy_manager][version] = "1.0"
+
+projects[term_reference_tree][version] = "1.10"
+
 projects[uuid][version] = "1.0-alpha5"
 
 projects[uuid_features][version] = "1.0-alpha3"
@@ -125,7 +132,12 @@ projects[views_content_cache][version] = "3.0-alpha2"
 
 projects[views_field_view][version] = "1.1"
 
+projects[views_php][version] = "1.x-dev"
+
 projects[views_rules][version] = "1.0"
+
+projects[views_tree][version] = "2.0"
+
 
 ; Libraries
 libraries[lessphp][download][type] = "get"
