@@ -39,6 +39,10 @@ projects[date][version] = "2.6"
 
 projects[deploy][version] = "2.0-alpha1"
 
+projects[dereference_list][version] = "1.x-dev"
+;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
+projects[dereference_list][patch][] = ""
+
 ; projects[ds][version] = "2.4"
 
 projects[email_registration][version] = "1.1"
@@ -109,6 +113,8 @@ projects[search_api_solr][version] = "1.0"
 projects[submitted_by][version] = "1.x-dev"
 
 projects[strongarm][version] = "2.0"
+
+projects[tablefield][version] = "2.1"
 
 projects[uuid][version] = "1.0-alpha5"
 
