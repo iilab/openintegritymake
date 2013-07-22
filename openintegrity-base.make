@@ -39,9 +39,12 @@ projects[deploy][version] = "2.0-alpha1"
 
 projects[diff][version] = "3.2"
 
+projects[dereference_list][download][type] = "git"
+projects[dereference_list][download][url] = "http://git.drupal.org/project/dereference_list.git"
+projects[dereference_list][type] = "module"
 projects[dereference_list][version] = "1.x-dev"
-;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
 projects[dereference_list][patch][] = "https://raw.github.com/iilab/openintegritymake/master/dereference_list_oii.patch"
+;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
 
 ; projects[ds][version] = "2.4"
 
@@ -64,6 +67,9 @@ projects[exclude_node_title][version] = "1.6"
 
 projects[features][version] = "2.x-dev"
 projects[features][patch][] = "https://drupal.org/files/1867910-dont-cry.patch"
+
+projects[features_extra][version] = "1.0-beta1"
+
 
 projects[field_collection][version] = "1.0-beta5"
 
