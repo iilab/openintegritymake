@@ -39,6 +39,10 @@ projects[deploy][version] = "2.0-alpha1"
 
 projects[diff][version] = "3.2"
 
+projects[dereference_list][version] = "1.x-dev"
+;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
+projects[dereference_list][patch][] = "https://raw.github.com/iilab/openintegritymake/master/dereference_list_oii.patch"
+
 ; projects[ds][version] = "2.4"
 
 projects[email_registration][version] = "1.1"
@@ -116,6 +120,8 @@ projects[strongarm][version] = "2.0"
 projects[taxonomy_manager][version] = "1.0"
 
 projects[term_reference_tree][version] = "1.10"
+
+projects[tablefield][version] = "2.1"
 
 projects[uuid][version] = "1.0-alpha5"
 
