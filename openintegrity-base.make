@@ -54,7 +54,6 @@ projects[entitycache][version] = "1.1"
 
 projects[entity_dependency][version] = "1.0-alpha1"
 
-
 projects[entity_view_mode][version] = "1.0-rc1"
 
 projects[entityreference][version] = "1.0"
@@ -68,6 +67,8 @@ projects[features][patch][] = "https://drupal.org/files/1867910-dont-cry.patch"
 
 projects[field_collection][version] = "1.0-beta5"
 
+projects[field_group][version] = "1.1"
+
 projects[field_permissions][version] = "1.0-beta2"
 
 projects[filefield_sources][version] = "1.8"
@@ -77,6 +78,8 @@ projects[formblock][version] = "1.x-dev"
 projects[fpa][version] = "2.3"
 
 projects[inline_entity_form][version] = "1.2"
+
+projects[imagecache_actions][version] = "1.3"
 
 projects[jquery_update][version] = "2.3"
 
@@ -126,6 +129,8 @@ projects[views][patch][] = "https://drupal.org/files/views-grouping-level-always
 projects[views_accordion][version] = "1.0-rc2"
 
 projects[views_block_area][version] = "1.1"
+
+projects[views_bulk_operations][version] = "3.1"
 
 projects[views_content_cache][version] = "3.0-alpha2"
 
