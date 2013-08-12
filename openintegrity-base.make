@@ -17,8 +17,6 @@ projects[better_formats][version] = "1.0-beta1"
 
 projects[block_class][version] = "2.0"
 
-projects[bootstrap][version] = "2.1"
-
 projects[botcha][version] = "3.2"
 
 projects[bundle_inherit][version] = "1.0-alpha2"
@@ -39,9 +37,14 @@ projects[date][version] = "2.6"
 
 projects[deploy][version] = "2.0-alpha1"
 
+projects[diff][version] = "3.2"
+
+projects[dereference_list][download][type] = "git"
+projects[dereference_list][download][url] = "http://git.drupal.org/project/dereference_list.git"
+projects[dereference_list][type] = "module"
 projects[dereference_list][version] = "1.x-dev"
-;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
 projects[dereference_list][patch][] = "https://raw.github.com/iilab/openintegritymake/master/dereference_list_oii.patch"
+;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
 
 ; projects[ds][version] = "2.4"
 
@@ -65,6 +68,9 @@ projects[exclude_node_title][version] = "1.6"
 projects[features][version] = "2.x-dev"
 projects[features][patch][] = "https://drupal.org/files/1867910-dont-cry.patch"
 
+projects[features_extra][version] = "1.0-beta1"
+
+
 projects[field_collection][version] = "1.0-beta5"
 
 projects[field_group][version] = "1.1"
@@ -76,6 +82,8 @@ projects[filefield_sources][version] = "1.8"
 projects[formblock][version] = "1.x-dev"
 
 projects[fpa][version] = "2.3"
+
+projects[get_form_id][version] = "1.0"
 
 projects[inline_entity_form][version] = "1.2"
 
@@ -90,6 +98,8 @@ projects[libraries][version] = "2.1"
 projects[link][version] = "1.1"
 
 projects[logintoboggan][version] = "1.3"
+
+projects[masquerade][version] = "1.0-rc5"
 
 projects[moopapi][version] = "1.2"
 
@@ -117,6 +127,10 @@ projects[submitted_by][version] = "1.x-dev"
 
 projects[strongarm][version] = "2.0"
 
+projects[taxonomy_manager][version] = "1.0"
+
+projects[term_reference_tree][version] = "1.10"
+
 projects[tablefield][version] = "2.1"
 
 projects[uuid][version] = "1.0-alpha5"
@@ -136,7 +150,12 @@ projects[views_content_cache][version] = "3.0-alpha2"
 
 projects[views_field_view][version] = "1.1"
 
+projects[views_php][version] = "1.x-dev"
+
 projects[views_rules][version] = "1.0"
+
+projects[views_tree][version] = "2.0"
+
 
 ; Libraries
 libraries[lessphp][download][type] = "get"
