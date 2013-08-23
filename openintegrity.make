@@ -16,8 +16,8 @@ projects[openintegrity][type] = "module"
 projects[openintegrity][version] = "1.0-dev"
 
 ; Open Integrity Theme
-projects[openintegrity][download][type] = "git"
-projects[openintegrity][download][url] = "https://github.com/iilab/openintegritytheme.git"
-projects[openintegrity][type] = "theme"
-projects[openintegrity][directory_name] = "bootstrap"
-projects[openintegrity][version] = "1.0-dev"
+projects[openintegritytheme][download][type] = "git"
+projects[openintegritytheme][download][url] = "https://github.com/iilab/openintegritytheme.git"
+projects[openintegritytheme][type] = "theme"
+projects[openintegritytheme][directory_name] = "bootstrap"
+projects[openintegritytheme][version] = "1.0-dev"
