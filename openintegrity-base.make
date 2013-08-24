@@ -71,7 +71,7 @@ projects[eva][version] = "1.2"
 
 projects[exclude_node_title][version] = "1.6"
 
-projects[features][version] = "2.x-dev"
+projects[features][version] = "2.0-rc2"
 
 projects[features_extra][version] = "1.0-beta1"
 
@@ -81,7 +81,7 @@ projects[field_group][version] = "1.1"
 
 projects[field_permissions][version] = "1.0-beta2"
 
-projects[field_tools][version] = "1.0-alpha3"
+projects[field_tools][version] = "1.0-alpha4"
 
 projects[filefield_sources][version] = "1.8"
 
@@ -95,7 +95,7 @@ projects[i18n][version] = "1.9"
 
 projects[i18n_contrib][version] = "1.0-alpha2"
 
-projects[inline_entity_form][version] = "1.2"
+projects[inline_entity_form][version] = "1.3"
 
 projects[interval][version] = "1.0-rc1"
 
@@ -105,13 +105,15 @@ projects[jquery_update][version] = "2.3"
 
 projects[l10n_update][version] = "1.0-beta3"
 
-projects[less][version] = "3.0-rc1"
+projects[less][version] = "3.0"
 
 projects[libraries][version] = "2.1"
 
 projects[link][version] = "1.1"
 
 projects[logintoboggan][version] = "1.3"
+
+projects[login_one_time][version] = "2.8"
 
 projects[masquerade][version] = "1.0-rc5"
 
@@ -129,13 +131,13 @@ projects[registration_toboggan][version] = "0.4"
 
 projects[rules][version] = "2.3"
 
-projects[search_api][version] = "1.6"
+projects[search_api][version] = "1.7"
 
-projects[search_api_db][version] = "1.0-rc1"
+projects[search_api_db][version] = "1.0-rc2"
 
 projects[search_api_autocomplete][version] = "1.0"
 
-projects[search_api_solr][version] = "1.0"
+projects[search_api_solr][version] = "1.1"
 
 projects[security_check][version] = "1.0-beta1"
 
