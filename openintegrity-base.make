@@ -166,6 +166,7 @@ projects[variable][version] = "2.3"
 
 projects[views][version] = "3.7"
 projects[views][patch][] = "https://drupal.org/files/views-grouping-level-always-is-zero-1488744-3_0.patch" 
+projects[views][patch][] = "https://drupal.org/files/views-1511396-76-array_diff_recursive.patch"
 
 projects[views_accordion][version] = "1.0-rc2"
 
