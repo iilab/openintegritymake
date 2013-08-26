@@ -43,10 +43,10 @@ projects[deploy][version] = "2.0-alpha1"
 
 projects[diff][version] = "3.2"
 
-projects[dereference_list][download][type] = "git"
-projects[dereference_list][download][url] = "http://git.drupal.org/project/dereference_list.git"
-projects[dereference_list][type] = "module"
-projects[dereference_list][version] = "1.x-dev"
+;projects[dereference_list][download][type] = "git"
+;projects[dereference_list][download][url] = "http://git.drupal.org/project/dereference_list.git"
+;projects[dereference_list][type] = "module"
+;projects[dereference_list][version] = "1.x-dev"
 ;projects[dereference_list][patch][] = "https://raw.github.com/iilab/openintegritymake/master/dereference_list_oii.patch"
 ;projects[dereference_list][patch][] = "https://drupal.org/files/AJAX-ify-dependent-fields-when-changing-a-project-on-issues-1551228-9-dereference.patch"
 
@@ -97,6 +97,8 @@ projects[i18n_contrib][version] = "1.0-alpha2"
 
 projects[inline_entity_form][version] = "1.3"
 
+projects[insert][version] = "1.3"
+
 projects[interval][version] = "1.0-rc1"
 
 projects[imagecache_actions][version] = "1.3"
@@ -114,6 +116,8 @@ projects[link][version] = "1.1"
 projects[logintoboggan][version] = "1.3"
 
 projects[login_one_time][version] = "2.8"
+
+projects[markdown][version] = "1.2"
 
 projects[masquerade][version] = "1.0-rc5"
 
@@ -159,6 +163,8 @@ projects[tablefield][version] = "2.1"
 projects[textformatter][version] = "1.3"
 
 projects[tmgmt][version] = "1.0-beta2"
+
+projects[token][version] = "1.5"
 
 projects[uuid][version] = "1.0-alpha5"
 
