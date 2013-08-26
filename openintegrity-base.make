@@ -4,6 +4,7 @@ core = 7.23
 api = 2
 projects[drupal][version] = "7.23"
 projects[drupal][patch][] = "https://drupal.org/files/1525176-fix_entity_conditions-D7.patch"
+projects[drupal][patch][] = "https://drupal.org/files/undefined_index_file_ajax-1336212-23.patch"
 
 ; Modules
 projects[admin_menu][version] = "3.0-rc4"
