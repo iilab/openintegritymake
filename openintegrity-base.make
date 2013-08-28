@@ -76,6 +76,8 @@ projects[features][version] = "2.0-rc2"
 
 projects[features_extra][version] = "1.0-beta1"
 
+projects[features_translations][version] = "1.0-beta1"
+
 projects[field_collection][version] = "1.0-beta5"
 
 projects[field_group][version] = "1.1"
