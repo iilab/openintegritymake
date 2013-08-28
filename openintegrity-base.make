@@ -161,6 +161,8 @@ projects[term_reference_tree][patch][] = "https://drupal.org/files/i18n_compatib
 
 projects[tablefield][version] = "2.1"
 
+projects[title][version] = "1.0-alpha7"
+
 projects[textformatter][version] = "1.3"
 
 projects[tmgmt][version] = "1.0-beta2"
