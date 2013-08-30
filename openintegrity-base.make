@@ -118,8 +118,6 @@ projects[link][version] = "1.1"
 
 projects[logintoboggan][version] = "1.3"
 
-projects[login_one_time][version] = "2.8"
-
 projects[markdown][version] = "1.2"
 
 projects[masquerade][version] = "1.0-rc5"
