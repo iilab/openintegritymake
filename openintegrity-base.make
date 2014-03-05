@@ -55,8 +55,7 @@ projects[diff][version] = "3.2"
 
 projects[email_registration][version] = "1.1"
 
-projects[entity][version] = "1.x-dev"
-projects[entity][patch][] = "http://drupal.org/files/entity-entity_node_access-1780646-97.patch"
+projects[entity][version] = "1.3"
 
 projects[entitycache][version] = "1.1"
 
@@ -98,6 +97,9 @@ projects[i18n][version] = "1.9"
 
 projects[i18n_contrib][version] = "1.0-alpha2"
 
+projects[i18nviews][version] = "3.x-dev"
+projects[i18nviews][patch][] = "https://drupal.org/files/i18nviews-1653170.patch"
+
 projects[inline_entity_form][version] = "1.3"
 
 projects[insert][version] = "1.3"
@@ -112,7 +114,7 @@ projects[l10n_update][version] = "1.0-beta3"
 
 projects[less][version] = "3.0"
 
-projects[libraries][version] = "2.1"
+projects[libraries][version] = "2.2"
 
 projects[link][version] = "1.1"
 
@@ -124,6 +126,8 @@ projects[masquerade][version] = "1.0-rc5"
 
 projects[moopapi][version] = "1.2"
 
+projects[oauth][version] = "3.2"
+
 projects[password_policy][version] = "2.0-alpha1"
 
 projects[password_tab][version] = "1.x-dev"
@@ -133,6 +137,8 @@ projects[profile2][version] = "1.3"
 projects[profile2_regpath][version] = "2.0-beta3"
 
 projects[registration_toboggan][version] = "0.4"
+
+projects[revisioning][version] = "1.6"
 
 projects[rules][version] = "2.3"
 
@@ -147,6 +153,10 @@ projects[search_api_solr][version] = "1.1"
 projects[security_check][version] = "1.0-beta1"
 
 projects[security_review][version] = "1.0"
+
+projects[services][version] = "3.7"
+
+projects[services_views][version] = "1.0"
 
 projects[simplehtmldom][version] = "1.12"  
 
@@ -188,7 +198,11 @@ projects[views_bulk_operations][version] = "3.1"
 projects[views_content_cache][version] = "3.0-alpha2"
 ; Adapted following patch https://drupal.org/files/undefined_help_topics-1402284-1.patch
 
+projects[views_datasource][version] = "1.x-dev"
+
 projects[views_field_view][version] = "1.1"
+
+projects[view_mode_page][version] = "2.3"
 
 projects[views_php][version] = "1.x-dev"
 ; Adapted following patch https://drupal.org/files/undefined_help_topics-1402284-1.patch
