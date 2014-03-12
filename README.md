@@ -1,10 +1,10 @@
 openintegritymake
 =================
 
-Prerequisites
+## Prerequisites
 * Apache Solr running (http://localhost:8983/solr)
 
-Installation
+## Installation
 
 (As you web server user)
 
@@ -16,3 +16,8 @@ Installation
 * drush en bootstrap (this will enable the openintegritytheme which is based on bootstrap)
 * drush vset theme_default bootstrap
 * drush en openintegrity
+
+## Updating feature
+
+* Do configuration changes through the UI or CLI.
+* drush fu openintegrity
