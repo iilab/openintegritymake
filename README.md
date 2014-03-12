@@ -20,4 +20,11 @@ openintegritymake
 ## Updating feature
 
 * Do configuration changes through the UI or CLI.
-* drush fu openintegrity
+* On development platform 
+  * drush fu openintegrity
+  * git commit -am "Changed this and that. fixes #00"
+  * git push
+* On staging/production
+  * cd sites/all/modules/openintegrity
+  * git pull
+  * drush fr openintegrity
