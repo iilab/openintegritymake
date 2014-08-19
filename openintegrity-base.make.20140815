@@ -144,7 +144,7 @@ projects[revisioning][version] = "1.6"
 
 projects[rules][version] = "2.3"
 
-projects[search_api][version] = "1.6"
+projects[search_api][version] = "1.7"
 
 projects[search_api_db][version] = "1.0-rc2"
 
